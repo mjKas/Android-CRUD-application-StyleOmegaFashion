@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -38,6 +39,15 @@ public class adapterGents extends RecyclerView.Adapter<adapterGents.ViewHolder>{
 
         Picasso.get().load(listItem.getImageUrlGents()).into(viewHolder.imageView);
 
+        viewHolder.linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Clicked item number", Toast.LENGTH_SHORT).show();
+/*                switch (v.getId()){
+                    case: R.id.
+                }*/
+            }
+        });
 
     }
 

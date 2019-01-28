@@ -11,19 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".changePassword"></activity>
+        <activity android:name=".checkOut"></activity>
+        <activity android:name=".viewCart" />
+        <activity android:name=".viewDetailTrouser" />
+        <activity android:name=".viewDetailsKidsblk" />
+        <activity android:name=".changePassword" />
         <activity android:name=".modifyPassword" />
         <activity android:name=".Register" />
-        <activity android:name=".viewDetails" />
-        <activity android:name=".logIn" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".ActivityGents" />
         <activity android:name=".Kids" />
         <activity android:name=".Ladies" />
         <activity android:name=".abtUs" />
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".logIn"
+            android:label="Style Omega Fashion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

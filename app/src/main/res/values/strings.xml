@@ -7,4 +7,8 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="Contact">Contact Us</string>
     <string name="title_activity_abt_us">abtUS</string>
+    <string name="title_activity_view_details_trouser">viewDetailsTrouser</string>
+    <string name="title_activity_view_details__gents_shirt">viewDetails_GentsShirt</string>
+    <string name="title_activity_view_details_kids">viewDetailsKids</string>
+    <string name="title_activity_check_out">checkOut</string>
 </resources>

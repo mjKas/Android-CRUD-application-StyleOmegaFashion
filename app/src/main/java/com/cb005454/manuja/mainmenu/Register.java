@@ -41,7 +41,7 @@ public class Register extends AppCompatActivity {
                     boolean insert = db.insert(nm, psswd2,secretwd);
                     if (insert) {
                         Toast.makeText(this, "Registered successfully, Please Login and enjoy shopping with us", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(this,MainActivity.class));
+                        startActivity(new Intent(this,logIn.class));
                     } else {
                         Toast.makeText(this, "Could Not Save the data, please try again", Toast.LENGTH_SHORT).show();
                     }

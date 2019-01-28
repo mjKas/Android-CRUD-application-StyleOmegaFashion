@@ -1,7 +1,9 @@
 package com.cb005454.manuja.mainmenu;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,18 +34,24 @@ class AdapterKids extends  RecyclerView.Adapter <AdapterKids.ViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
-        listKids listKids=listKidss.get(i);
+    public void onBindViewHolder(@NonNull final ViewHolder viewHolder,final  int i) {
+        final listKids listKids=listKidss.get(i);
         viewHolder.textViewhead.setText(listKids.getHeadKids());
         viewHolder.textViewDescription.setText(listKids.getDescriptionkids());
         Picasso.get().load(listKids.getImageUrlKids()).into(viewHolder.imageView);
         viewHolder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Clicked item number", Toast.LENGTH_SHORT).show();
+                if(i==0) {
+                    Intent intent = new Intent(context,viewDetailsKidsblk.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK |Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    context.startActivity(intent);
+                }
             }
         });
     }
+
+
 
     @Override
     public int getItemCount() {
@@ -54,12 +62,14 @@ class AdapterKids extends  RecyclerView.Adapter <AdapterKids.ViewHolder>{
         public TextView textViewhead,textViewDescription;
         public ImageView imageView;
         public LinearLayout linearLayout;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewhead = itemView.findViewById(R.id.textViewHeadKids);
             textViewDescription = itemView.findViewById(R.id.textViewDescriptionKids);
             imageView = itemView.findViewById(R.id.imageviewKids);
             linearLayout = itemView.findViewById(R.id.linerlayoutKids);
+
         }
     }
 }
