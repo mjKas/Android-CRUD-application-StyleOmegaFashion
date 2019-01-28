@@ -1,37 +1,38 @@
 package com.cb005454.manuja.mainmenu;
 
 public class listKids {
-    String Head;
-    String description;
-    String imageUrl;
+    String HeadKids;
+    String descriptionkids;
+    String imageUrlKids;
 
-    public listKids(String head, String description, String imageUrl) {
-        Head = head;
-        this.description = description;
-        this.imageUrl = imageUrl;
+
+    public listKids(String headKids, String descriptionkids, String imageUrlKids) {
+        HeadKids = headKids;
+        this.descriptionkids = descriptionkids;
+        this.imageUrlKids = imageUrlKids;
     }
 
-    public String getHead() {
-        return Head;
+    public String getHeadKids() {
+        return HeadKids;
     }
 
-    public void setHead(String head) {
-        Head = head;
+    public void setHeadKids(String headKids) {
+        HeadKids = headKids;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescriptionkids() {
+        return descriptionkids;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescriptionkids(String descriptionkids) {
+        this.descriptionkids = descriptionkids;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getImageUrlKids() {
+        return imageUrlKids;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImageUrlKids(String imageUrlKids) {
+        this.imageUrlKids = imageUrlKids;
     }
 }
