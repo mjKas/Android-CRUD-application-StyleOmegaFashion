@@ -57,8 +57,8 @@ public class Kids extends AppCompatActivity {
                             for (int i = 0; i < jsonArray.length(); i++) {
                                 JSONObject object = jsonArray.getJSONObject(i);
                                 listKids listKidss = new listKids(
-                                        object.getString("name"), //object key goes here
-                                        object.getString("about"),//object key goes here
+                                        object.getString("name"),
+                                        object.getString("about"),
                                         object.getString("image")//o
                                 );
                                 listKids.add(listKidss);
