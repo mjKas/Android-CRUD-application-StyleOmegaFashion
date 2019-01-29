@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
         android:ems="10"
-        android:hint="@string/username"
+        android:hint="User Name"
         android:inputType="textPersonName"
         android:textColor="@android:color/white"
         app:layout_constraintTop_toTopOf="parent"

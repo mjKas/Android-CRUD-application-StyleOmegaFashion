@@ -1,11 +1,9 @@
 package com.cb005454.manuja.mainmenu;
 
-import android.app.LauncherActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -40,6 +38,10 @@ public class MainActivity extends AppCompatActivity
         RecyclerView.Adapter adapter;
         //creating arraylist
         public List<listItem> listItems;
+
+    public static final String DATABASE_NAME = "ItemManagement";
+    SQLiteDatabase sqLiteDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -164,6 +166,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
+            startActivity(new Intent(this,ContactUs.class));
 
         }
 
@@ -173,4 +176,32 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    //Search function for the application to extract json  data
+    public JSONObject showValues(View view) throws JSONException {
+        String name;
+        JSONObject searchObject = null;
+
+        JSONArray array = new JSONArray(URL_DATA);
+
+        for (int i = 0; i < array.length(); i++) {
+            JSONObject currObject = array.getJSONObject(i);
+            name = currObject.getString("name");
+
+            if(name == "ladies")
+            {
+                searchObject = currObject;
+            }
+            if(name == "gents")
+            {
+                searchObject = currObject;
+            }
+            if(name == "kids")
+            {
+                searchObject = currObject;
+            }
+
+        }
+
+        return searchObject;
+    }
 }

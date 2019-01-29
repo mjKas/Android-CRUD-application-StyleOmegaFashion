@@ -11,15 +11,18 @@
     <string name="title_activity_view_details__gents_shirt">viewDetails_GentsShirt</string>
     <string name="title_activity_view_details_kids">viewDetailsKids</string>
     <string name="title_activity_check_out">checkOut</string>
-    <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="repeat_password">Repeat Password</string>
     <string name="security_word">Security word</string>
     <string name="user_name">User Name</string>
-    <string name="password">Password</string>
+
     <string name="login">Login</string>
     <string name="register">Register</string>
-    <string name="login">Login</string>
+
     <string name="forget_passowrd">Forget Passowrd?</string>
     <string name="want_to_be_stylish">Want to be Stylish?</string>
+    <string name="modify_user_details">Modify User Details</string>
+
+
+    <string name="submit">Submit</string>
 </resources>
