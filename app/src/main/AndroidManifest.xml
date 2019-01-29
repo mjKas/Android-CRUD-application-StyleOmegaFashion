@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".checkOut"></activity>
-        <activity android:name=".viewCart" />
         <activity android:name=".viewDetailTrouser" />
         <activity android:name=".viewDetailsKidsblk" />
         <activity android:name=".changePassword" />

@@ -39,6 +39,7 @@ public class logIn extends AppCompatActivity {
             else {
                 Toast.makeText(this, "Username or password incorrect", Toast.LENGTH_SHORT).show();
             }
+            Toast.makeText(this, "Please enter the username and Password", Toast.LENGTH_SHORT).show();
         }
     }
 
